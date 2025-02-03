@@ -12,7 +12,7 @@ import { useAuth0 } from "@auth0/auth0-react"
 import MobileNavLink from "./MobileNavLink"
  
 export function MobileNav() {
-  const {isAuthenticated, loginWithRedirect, user} = useAuth0();
+  const {isAuthenticated, loginWithRedirect} = useAuth0();
   return (
     <Sheet>
         <SheetTrigger>
@@ -26,7 +26,7 @@ export function MobileNav() {
                         <CircleUserRound className="text-orange-500" />
                       </span>
                   ) : (
-                    <span>Welcome to MernEats.com!</span>
+                    <span>Welcome to MernEats.com</span>
                   )
                 }
             </SheetTitle>
