@@ -40,7 +40,7 @@ export function MobileNav() {
                     onClick={() => loginWithRedirect()}
                     className="flex-1 font-bold bg-orange-500"
                   > 
-                    Log In
+                    Log In2
                   </Button>
                 )
               }
