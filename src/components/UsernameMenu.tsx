@@ -15,17 +15,25 @@ const UsernameMenu = () => {
                 {user?.email}
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="mt-2">
                     <Link
                         to="/user-profile"
-                        className="font-bold hover:text-orange-500"
+                        className="font-bold hover:text-orange-500 m-2"
                     >
                         User Profile
                     </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem className="mt-2">
+                    <Link
+                        to="/user-restaurant"
+                        className="font-bold hover:text-orange-500 m-2"
+                    >
+                        User Manage Restaurant
+                    </Link>
+                </DropdownMenuItem>
                 <Separator />
                 <DropdownMenu>
-                    <Button onClick={() => logout()} className="flex flex-1 font-bold bg-orange-500">
+                    <Button onClick={() => logout()} className="flex flex-1 font-bold bg-orange-500 mt-2">
                         Logout
                     </Button>
                 </DropdownMenu>
